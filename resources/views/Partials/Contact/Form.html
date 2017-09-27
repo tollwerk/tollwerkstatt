@@ -1,0 +1,84 @@
+<a name="contact"></a>
+<div class="contact-form">
+    <f:if condition="{tw:user.isBanned()}">
+        <f:then>
+            <f:render partial="GeneralErrors" arguments="{errors: '{0: \'Du wurdest wegen SPAM-Verdachts für das Formular gesperrt. Bitte kontaktiere uns direkt!\'}'}"/>
+        </f:then>
+        <f:else>
+            <f:render section="Form" arguments="{_all}"/>
+        </f:else>
+    </f:if>
+</div>
+
+
+
+<f:section name="Form">
+    <f:if condition="{form.success}">
+        <f:then>
+            <f:render section="ThankYou" arguments="{_all}"/>
+        </f:then>
+        <f:else>
+
+            <f:render partial="GeneralErrors" arguments="{errors: form.errors.general}"/>
+            <form method="post" action="/#contact">
+
+                <label class="required">
+                    <div>Name<sup>*</sup></div>
+                    <input type="text" name="form[name]" value="{form.data.name}" required/>
+                    <f:render section="FieldError" arguments="{error: form.errors.fields.name}"/>
+                </label>
+
+                <label class="required">
+                    <div>Email<sup>*</sup></div>
+                    <input type="email" name="form[email]" value="{form.data.email}" required/>
+                    <f:render section="FieldError" arguments="{error: form.errors.fields.email}"/>
+                </label>
+
+                <label class="required">
+                    <div>Nachricht<sup>*</sup></div>
+                    <textarea name="form[message]" value="{form.data.message}" required></textarea>
+                    <f:render section="FieldError" arguments="{error: form.errors.fields.message}"/>
+                </label>
+
+                <f:render section="SpamProtection"/>
+
+                <div>
+                    <button type="submit">Absenden</button>
+                </div>
+
+            </form>
+            <div class="required-text">
+                <small>* Pflichtfeld</small>
+            </div>
+
+        </f:else>
+    </f:if>
+</f:section>
+
+
+
+<f:section name="ThankYou">
+    <div class="contact-form-thankyou">
+        Vielen Dank für deine Nachricht!
+    </div>
+</f:section>
+
+
+
+<f:section name="FieldError">
+    <f:if condition="{error}">
+        <div class="form-error">
+            {error}
+        </div>
+    </f:if>
+</f:section>
+
+
+
+<f:section name="SpamProtection">
+    <div style="width: 0; height: 0; overflow: hidden">
+        <input name="email" type="email" value="" placeholder="Your email address" tabindex="-1"/>
+        <input name="name" type="text" value="" placeholder="Your name" tabindex="-1"/>
+        <textarea name="message" tabindex="-1"></textarea>
+    </div>
+</f:section>

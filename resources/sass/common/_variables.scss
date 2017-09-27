@@ -1,0 +1,26 @@
+$breakpoint-100: 16em;
+$breakpoint-200: 32em;
+$breakpoint-300: 42em;
+$breakpoint-400: 56em;
+$breakpoint-500: 64em;
+
+$max-width: $breakpoint-300;
+
+$color-white: #ffffff;
+$color-grey-lightest: #f3f3f3;
+$color-grey-light: #d6d6d6;
+$color-grey: #929292;
+
+$space-small: .5em;
+$space: 1.5em;
+$space-large: 3em;
+
+$section-border-height: 2em;
+$section-color: $color-white;
+$section-color-alt: $color-grey-lightest;
+
+$zBottom: 10;
+$zMid: 20;
+$zTop: 30;
+$zMax: 50;
+$zOverlay: 99;

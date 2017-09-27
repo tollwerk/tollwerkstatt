@@ -1,0 +1,32 @@
+.COL_title {
+  cursor: pointer;
+}
+
+main > section.COL_collapsible {
+
+  &.collapsible-ready {
+    padding-bottom: $space * 2;
+
+    & .COL_title {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      z-index: $zBottom;
+      width: 0;
+      height: 0;
+      border-color: $color-grey transparent;
+      border-width: 0 1.2em 1.5em;
+      margin-left: -1.2em;
+      margin-top: $space / 2;
+      text-align: center;
+      border-style: solid;
+      text-indent: 100%;
+      overflow: hidden;
+    }
+
+    &.collapsed .COL_title {
+      transform: rotate(180deg);
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+<style>
+    td,th {
+        vertical-align: top;
+        padding: .25em 1em .25em 0;
+        text-align: left;
+    }
+</style>
+
+<p>
+    <strong>Hallo Admin!</strong><br/>
+    Folgende Nachricht wurde gerade über das tollwerkstatt Anfrage-Formular verschickt:
+</p>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td>{form.name}</td>
+    </tr>
+    <tr>
+        <th>E-Mail</th>
+        <td>{form.email}</td>
+    </tr>
+    <tr>
+        <th>Nachricht</th>
+        <td>{form.message}</td>
+    </tr>
+</table>
+
+<p>
+Viele Grüße<br />
+Dein tollwerkstatt-Formular ♥
+</p>

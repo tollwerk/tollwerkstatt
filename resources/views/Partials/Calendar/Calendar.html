@@ -1,0 +1,20 @@
+<div id="calendar">
+    <!--
+    Der komplette Inhalt dieses DIVs wird per Javascript durch den "echten" Kalender ersetzt
+    und ist daher zum einen ein Fallback, wenn Javascript nicht funktioniert und auf jeden Fall
+    für Google und Co. relevant. Man könnte hier auch prima Microformats einbauen.
+     -->
+    <f:if condition="{events}">
+        <ol>
+            <f:for each="{events}" as="event">
+                <li><tw:format.date/>{event.title}</li>
+            </f:for>
+        </ol>
+    </f:if>
+
+</div>
+
+<div id="calendar-popup" style="display: none">
+    <button id="calendar-popup_close">CLOSE</button>
+    <div id="calendar-popup_content"></div>
+</div>

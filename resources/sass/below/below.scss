@@ -1,0 +1,57 @@
+@import "../common/variables";
+@import "general";
+@import "calendar";
+@import "COL_collapsible";
+
+body:before {
+  display: block;
+  content: 'Breakpoint: 0';
+  padding: 1em;
+  text-align: center;
+  background-color: $color-grey-lightest;
+}
+
+@media all and (min-width: $breakpoint-100) {
+  html {
+    z-index: 100;
+  }
+  body:before {
+    content: 'Breakpoint: 100';
+  }
+}
+
+@media all and (min-width: $breakpoint-200) {
+  html {
+    z-index: 200;
+  }
+  body:before {
+    content: 'Breakpoint: 200';
+  }
+}
+
+@media all and (min-width: $breakpoint-300) {
+  html {
+    z-index: 300;
+  }
+  body:before {
+    content: 'Breakpoint: 300';
+  }
+}
+
+@media all and (min-width: $breakpoint-400) {
+  html {
+    z-index: 400;
+  }
+  body:before {
+    content: 'Breakpoint: 400';
+  }
+}
+
+@media all and (min-width: $breakpoint-500) {
+  html {
+    z-index: 500;
+  }
+  body:before {
+    content: 'Breakpoint: 500';
+  }
+}
