@@ -121,7 +121,8 @@ class IndexController extends AbstractController
     }
 
     /**
-     * Check if SPAM honeypot fields were filled.
+     * Check if SPAM honeypot fields were filled
+     *
      * @param $honeypots
      * @return bool
      */
