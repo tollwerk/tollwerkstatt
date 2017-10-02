@@ -1,6 +1,8 @@
 @import "../common/variables";
 @import "general";
 @import "calendar";
+@import "motive";
+@import "image-section";
 @import "COL_collapsible";
 
 body:before {
@@ -48,7 +50,7 @@ body:before {
 }
 
 @media all and (min-width: $breakpoint-500) {
-  html {
+  html {  
     z-index: 500;
   }
   body:before {

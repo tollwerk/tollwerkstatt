@@ -1,15 +1,11 @@
 <f:layout name="Default"/>
 <f:section name="Main">
     <section>
-        <h2>Kontakt</h2>
-        <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-        <f:render partial="Contact/Form" arguments="{form: form}"/>
-    </section>
-
-    <section>
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+        <h1>Tollwerkstatt</h1>
+        <p>
+            Wilkommen in der Tollwerkstatt! Kreativwerkstatt
+            Austattung Kontakt  Kreativ- und Tech-Events
+            Test Test Lorem ispum und so weiter...</p>
     </section>
 
     <section>
@@ -17,32 +13,128 @@
         <f:render partial="Calendar/Calendar" arguments="{events: events}"/>
     </section>
 
+    <section class="COL_collapsible">
+        <h2>Austattung</h2>
+        <p>Dies ist eine vollständige Liste der Austattung der Tollwerkstatt Bei weiteren Fragen zur Austattung kontaktieren sie uns direkt!</p>
+        <div class="COL_content">
+
+            <ul>
+                <li>gute Erreichbarkeit durch öffentliche Anbindung (U-Bahn, Bus)</li>
+                <li>ausreichend Parkplätze</li>
+                <li>barrierefreier Zugang</li>
+                <li>50 Sitzplätze</li>
+                <li>variabel verstellbare Tische</li>
+                <li>kleine Teeküche mit Kühlschrank</li>
+                <li>WLAN</li>
+                <li>Open Device Lap – diverse Endgeräte mit unterschiedlichen Betriebssystemen</li>
+                <li>Beamer mit großer Leinwand (Beamerauflösung usw.)</li>
+                <li>Anschlüsse</li>
+                <li>große Tafel mit Kreide</li>
+                <li>ausreichend Steckdosen</li>
+                <li>variable Lichtgestaltung</li>
+                <li>Post its und Stifte</li>
+                <li>kleines Versorgungspaket: Kaffee, Milch & Wasser xx€/Person</li>
+                <li>großes Versorgungspaket: div. andere Getränke und Catering nach Absprache möglich</li> 
+            </ul>
+
+        </div>
+        <div class="COL_title" data-collapse-title="Weniger lesen" aria-hidden="true" hidden data-expand-title="Mehr lesen"></div>
+    </section>
 
     <section class="COL_collapsible">
-        <h2>Donec quam felis</h2>
-        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        <h2>Preise & Anmeldung</h2>
+        <p>Dies ist eine vollständige Liste der Austattung der Tollwerkstatt Bei weiteren Fragen zur Austattung kontaktieren sie uns direkt!</p>
         <div class="COL_content">
+            <f:render partial="Contact/Form"></f:render>
+        </div>
+        <div class="COL_title" data-collapse-title="Weniger lesen" aria-hidden="true" hidden data-expand-title="Mehr lesen"></div>
+    </section>
+
+    <section>
+        <h2>Policy und Comittment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+    </section>
+
+    <f:spaceless>
+    <section  class="bigger">
+        <h2>Motive</h2>
+        <div class="motives">
+            <div class="motive">
+                <h2>1. Raum Mieten</h2>
+                <img src="/img/tollwerkstatt-1.jpg">
+                <p>Sie suchen eine Räumlichkeit in der Sie mit Ihren Mitarbeitern und Kollegen  außerhalb Ihrer 4 Wände kreativ sein,
+                    eine Besprechung oder einen Workshop abhalten können und trotzdem nicht auf techn.
+                    Voraussetzungen (Wlan, genug Steckdosen, usw.) und Kaffee verzichten müssen -
+                    dann kommen Sie in die tollwerkstatt und den Rest regeln wir.
+                </p>
+            </div>
+            <div class="motive">
+                <h2>2. Community-Pflege</h2>
+                <img src="/img/tollwerkstatt-1.jpg">
+                <p>„Ihr seid eine nichtkommerzielle Community und braucht Platz zum Coden,  Entwickeln, Youtuben oder Rollenspielen?
+                    Dann meldet euch bei uns, es gelten für euch andere Nutzungsbedingungen wie zum Beispiel kostenfreie Nutzung der tollwerkstatt.“
+                </p>
+            </div>
+            <div class="motive">
+                <h2>3. Workshop buchen</h2>
+                <img src="/img/tollwerkstatt-1.jpg">
+                <p>Da wir bereits einige Workshops für Kunden und Unternehmen in verschiedenen Bereichen gehalten haben,
+                    kontaktieren Sie uns gerne wenn wir einen Workshop für Sie und Ihre Mitarbeiter und Kollegen bei uns in der tollwerkstatt  vorbereiten und abhalten dürfen.
+                    Dabei können Sie sich auf unsere Workshoperfahrung verlassen und sich mit ihren Kollegen auf einen informativen und inspirierenden Tag freuen!“
+                </p>
+            </div>
+            <div class="motive">
+                <h2>4. Workshop besuchen</h2>
+                <img src="/img/tollwerkstatt-1.jpg">
+                <p>„Wir bieten immer wieder verschiedene Veranstaltungen an (Workshops, Talks, uvm.) zu denen du dich auch als Einzelperson anmelden kannst. Siehe hier unsere nächsten Veranstaltungen.“</p>
+            </div>
+     </div>
+    </f:spaceless>
+    </section>
+
+
+
+    <section class="COL_collapsible">
+        <h2>Code of Conduct</h2>
+        <p>Dies ist der verhaltenskodex den sie bei besuchen
+            in der Tollwerkstatt beachten sollten:</p>
+        <div class="COL_content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
         </div>
         <div class="COL_title" data-collapse-title="Weniger lesen" aria-hidden="true" hidden data-expand-title="Mehr lesen"></div>
     </section>
 
 
+    <section>
+        <h2>TOP </h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+    </section>
+    <section class="image-section top">
+        <div  class="image"></div>
+    </section>
 
     <section>
-        <h2>Lorem Ipsum</h2>
+        <h2>BOTH </h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+    </section>
+    <section class="image-section both">
+        <div  class="image"></div>
+    </section>
+    <section>
+        <h2>BOTH </h2>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
     </section>
 
-    <section>
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+    <section class="image-section bottom">
+        <div  class="image"></div>
     </section>
-
     <section>
-        <h2>Lorem Ipsum</h2>
+        <h2>BOTTOM</h2>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
     </section>

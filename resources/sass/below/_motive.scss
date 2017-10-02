@@ -1,0 +1,15 @@
+.motives {
+    margin: 0 -3em;
+
+    & * {
+        box-sizing: border-box;
+    }
+
+    & .motive {
+        display: inline-block;
+        max-width: 25%;
+        padding: 0 3em;
+        vertical-align: top;
+    }
+}
+

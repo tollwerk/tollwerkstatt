@@ -1,0 +1,41 @@
+
+main > section.dynamic-css-borders.image-section {
+    box-sizing: border-box;
+    padding: 0;
+    max-width: 45em;
+    z-index: -100;
+
+    &.top {
+        margin-top: -2em;
+
+        &::after {
+            top: calc(100% - 2em);
+            border-color: transparent transparent $section-color transparent;
+            z-index: 0;
+        }
+    }
+
+    &.both {
+
+        margin-top: -2em;
+        margin-bottom: -2em;
+    }
+
+    &.bottom {
+        margin-bottom: -2em;
+
+        &::before {
+            border-color: transparent transparent transparent $section-color;
+            top: 2em;
+            z-index: 0;
+        }
+    }
+
+}
+
+.image {
+    background-image: url("/img/tollwerkstatt-1.jpg");
+    content: "";
+    height: 600px;
+    width: auto;
+}

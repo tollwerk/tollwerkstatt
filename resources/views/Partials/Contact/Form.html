@@ -24,19 +24,19 @@
 
                 <label class="required">
                     <div>Name<sup>*</sup></div>
-                    <input type="text" name="form[name]" value="{form.data.name}" required/>
+                    <input class="input" type="text" name="form[name]" value="{form.data.name}" required/>
                     <f:render section="FieldError" arguments="{error: form.errors.fields.name}"/>
                 </label>
 
                 <label class="required">
-                    <div>Email<sup>*</sup></div>
-                    <input type="email" name="form[email]" value="{form.data.email}" required/>
+                    <div>E-Mail<sup>*</sup></div>
+                    <input class="input" type="email" name="form[email]" value="{form.data.email}" required/>
                     <f:render section="FieldError" arguments="{error: form.errors.fields.email}"/>
                 </label>
 
                 <label class="required">
                     <div>Nachricht<sup>*</sup></div>
-                    <textarea name="form[message]" value="{form.data.message}" required></textarea>
+                    <textarea class="input" name="form[message]" value="{form.data.message}" required></textarea>
                     <f:render section="FieldError" arguments="{error: form.errors.fields.message}"/>
                 </label>
 

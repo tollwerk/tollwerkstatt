@@ -51,6 +51,14 @@ main > section:last-child.dynamic-css-borders {
   main > section:last-child.dynamic-css-borders:after {
     display: none; }
 
+.input {
+  padding: .5em;
+  width: 100%;
+  margin: .5em 0 1em 0; }
+
+.bigger {
+  max-width: 84em; }
+
 @media print {
   main > section {
     max-width: 42em; } }
@@ -59,6 +67,43 @@ main > section:last-child.dynamic-css-borders {
   background-color: #f3f3f3;
   padding: 2em;
   max-width: 42em; }
+
+.motives {
+  margin: 0 -3em; }
+  .motives * {
+    box-sizing: border-box; }
+  .motives .motive {
+    display: inline-block;
+    max-width: 25%;
+    padding: 0 3em;
+    vertical-align: top; }
+
+main > section.dynamic-css-borders.image-section {
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 45em;
+  z-index: -100; }
+  main > section.dynamic-css-borders.image-section.top {
+    margin-top: -2em; }
+    main > section.dynamic-css-borders.image-section.top::after {
+      top: calc(100% - 2em);
+      border-color: transparent transparent #ffffff transparent;
+      z-index: 0; }
+  main > section.dynamic-css-borders.image-section.both {
+    margin-top: -2em;
+    margin-bottom: -2em; }
+  main > section.dynamic-css-borders.image-section.bottom {
+    margin-bottom: -2em; }
+    main > section.dynamic-css-borders.image-section.bottom::before {
+      border-color: transparent transparent transparent #ffffff;
+      top: 2em;
+      z-index: 0; }
+
+.image {
+  background-image: url("/img/tollwerkstatt-1.jpg");
+  content: "";
+  height: 600px;
+  width: auto; }
 
 .COL_title {
   cursor: pointer; }
