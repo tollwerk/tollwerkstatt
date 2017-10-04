@@ -5,6 +5,10 @@ main > section.dynamic-css-borders.image-section {
     max-width: 45em;
     z-index: -100;
 
+    & img {
+        width: 100%
+    }
+
     &.top {
         margin-top: -2em;
 
@@ -16,7 +20,6 @@ main > section.dynamic-css-borders.image-section {
     }
 
     &.both {
-
         margin-top: -2em;
         margin-bottom: -2em;
     }
@@ -31,11 +34,4 @@ main > section.dynamic-css-borders.image-section {
         }
     }
 
-}
-
-.image {
-    background-image: url("/img/tollwerkstatt-1.jpg");
-    content: "";
-    height: 600px;
-    width: auto;
 }

@@ -1,0 +1,46 @@
+footer {
+    display: block;
+
+    & div {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0.5em;
+        text-align: center;
+        border-bottom: 1px solid black;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+
+
+
+
+@media all and (min-width: $breakpoint-400) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0.5em 2em ;
+        font-weight: 700;
+
+        & div {
+            width: auto;
+            display: inline-block;
+            flex-grow: 1;
+            text-align: center;
+            border-left: 2px solid black;
+            border-bottom: none;
+
+            &:last-child {
+                border-right: 2px solid black;
+            }
+        }
+    }
+
+
+
+}

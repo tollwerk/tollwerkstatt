@@ -1,0 +1,10 @@
+.prices {
+    background-color: $color-grey-dark !important;
+    color: #ffffff;
+    &::after {
+        border-color: transparent $color-grey-dark !important;
+    }
+    &::before {
+        border-color: transparent transparent $color-grey-dark transparent !important;
+    }
+}

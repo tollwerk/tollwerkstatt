@@ -1,15 +1,24 @@
-.motives {
-    margin: 0 -3em;
+.motives { 
+    & .motive {
+        width: 60%;
+        margin-bottom: 2em;
+    }
 
     & * {
         box-sizing: border-box;
     }
-
-    & .motive {
-        display: inline-block;
-        max-width: 25%;
-        padding: 0 3em;
-        vertical-align: top;
-    }
 }
 
+@media all and (min-width: $breakpoint-300) {
+    .motives {
+        margin: 0 -3em;
+        padding: 0 1em;
+
+        & .motive {
+            display: inline-block;
+            max-width: 25%;
+            padding: 0 3em;
+            vertical-align: top;
+        }
+    }
+}

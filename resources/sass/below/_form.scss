@@ -1,0 +1,91 @@
+.form-section {
+    background-color: $color-grey-light;
+
+    &::after {
+        border-color: transparent $color-grey-light !important;
+    }
+    &::before {
+        border-color: transparent transparent $color-grey-light transparent !important;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0 auto 0;
+    color: $color-grey-dark;
+
+    & * {
+        box-sizing: border-box;
+    }
+
+    & label {
+        & div {
+            display: block;
+            margin-bottom: .5em;
+            margin-top: 1em;
+        }
+
+        & input {
+            display: block;
+            width: 100%;
+            padding: 0.8em;
+            border: 1px solid $color-grey;
+        }
+
+        & textarea {
+            display: block;
+            width: 100%;
+            border: 1px solid $color-grey;
+            height: 10em;
+        }
+    }
+
+    & button {
+        color: $color-grey;
+        background-color: $color-grey-light;
+        border: 2px solid #ffffff;
+        font-size: 14pt;
+        padding: 0.8em;
+        margin-top: 1em;
+    }
+
+    & .required-text {
+        text-align: right;
+    }
+}
+
+@media all and (min-width: $breakpoint-200) {
+    .contact-form {
+        & form {
+            margin: 0 3em;
+
+            & label {
+                & div {
+                    display: inline-block;
+                    width: 20%;
+                    margin-top: 1.5em;
+                }
+
+                & input {
+                    display: inline-block;
+                    width: 80%;
+                }
+
+                & textarea {
+                    display: inline-block;
+                    width: 80%;
+                    vertical-align: top;
+                    margin-top: 1.5em;
+                }
+            }
+
+            & button {
+                margin-top: 1.5em;
+            }
+        }
+
+        & .required-text {
+            margin-right: 3em;
+        }
+    }
+}

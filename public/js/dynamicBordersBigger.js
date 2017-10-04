@@ -20,8 +20,8 @@
 
     DynamicCssBordersBigger.prototype.updateBorders = function () {
         var width = $(this.selector).first().outerWidth();
-        console.log(width)
-        var margin = ($(window).width() / 2) - (width/2) ;
+        var widthbigger = $(this.biggerselector).first().outerWidth();
+        var margin = (widthbigger / 2) - (width/2) ;
         this.$dynamicStyleTagBigger.text('' +
             this.beforeSelector + ', ' + this.afterSelector + '{margin-left: ' + margin + 'px; }'
         );

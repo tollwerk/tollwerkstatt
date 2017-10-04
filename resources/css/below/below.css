@@ -51,11 +51,6 @@ main > section:last-child.dynamic-css-borders {
   main > section:last-child.dynamic-css-borders:after {
     display: none; }
 
-.input {
-  padding: .5em;
-  width: 100%;
-  margin: .5em 0 1em 0; }
-
 .bigger {
   max-width: 84em; }
 
@@ -68,21 +63,158 @@ main > section:last-child.dynamic-css-borders {
   padding: 2em;
   max-width: 42em; }
 
-.motives {
-  margin: 0 -3em; }
-  .motives * {
+.motives .motive {
+  width: 60%;
+  margin-bottom: 2em; }
+
+.motives * {
+  box-sizing: border-box; }
+
+@media all and (min-width: 42em) {
+  .motives {
+    margin: 0 -3em;
+    padding: 0 1em; }
+    .motives .motive {
+      display: inline-block;
+      max-width: 25%;
+      padding: 0 3em;
+      vertical-align: top; } }
+
+.form-section {
+  background-color: #d6d6d6; }
+  .form-section::after {
+    border-color: transparent #d6d6d6 !important; }
+  .form-section::before {
+    border-color: transparent transparent #d6d6d6 transparent !important; }
+
+.contact-form {
+  width: 100%;
+  margin: 0 auto 0;
+  color: #727272; }
+  .contact-form * {
     box-sizing: border-box; }
-  .motives .motive {
+  .contact-form label div {
+    display: block;
+    margin-bottom: .5em;
+    margin-top: 1em; }
+  .contact-form label input {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #929292; }
+  .contact-form label textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #929292;
+    height: 10em; }
+  .contact-form button {
+    color: #929292;
+    background-color: #d6d6d6;
+    border: 2px solid #ffffff;
+    font-size: 14pt;
+    padding: 0.8em;
+    margin-top: 1em; }
+  .contact-form .required-text {
+    text-align: right; }
+
+@media all and (min-width: 32em) {
+  .contact-form form {
+    margin: 0 3em; }
+    .contact-form form label div {
+      display: inline-block;
+      width: 20%;
+      margin-top: 1.5em; }
+    .contact-form form label input {
+      display: inline-block;
+      width: 80%; }
+    .contact-form form label textarea {
+      display: inline-block;
+      width: 80%;
+      vertical-align: top;
+      margin-top: 1.5em; }
+    .contact-form form button {
+      margin-top: 1.5em; }
+  .contact-form .required-text {
+    margin-right: 3em; } }
+
+main > section.before-circle {
+  padding: 1.5em 1.5em 4em; }
+
+.circle {
+  text-align: center; }
+  .circle .border-circle {
+    position: relative;
     display: inline-block;
-    max-width: 25%;
-    padding: 0 3em;
-    vertical-align: top; }
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    margin: -100px 0 1em; }
+  .circle .outer-circle {
+    position: absolute;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: 5px;
+    left: 5px; }
+  .circle .inner-circle {
+    position: absolute;
+    text-align: center;
+    height: 1em;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: #929292;
+    font-size: 18pt;
+    font-weight: 700; }
+
+.prices {
+  background-color: #727272 !important;
+  color: #ffffff; }
+  .prices::after {
+    border-color: transparent #727272 !important; }
+  .prices::before {
+    border-color: transparent transparent #727272 transparent !important; }
+
+footer {
+  display: block; }
+  footer div {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 1px solid black; }
+    footer div:last-child {
+      border-bottom: none; }
+
+@media all and (min-width: 56em) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0.5em 2em;
+    font-weight: 700; }
+    footer div {
+      width: auto;
+      display: inline-block;
+      flex-grow: 1;
+      text-align: center;
+      border-left: 2px solid black;
+      border-bottom: none; }
+      footer div:last-child {
+        border-right: 2px solid black; } }
 
 main > section.dynamic-css-borders.image-section {
   box-sizing: border-box;
   padding: 0;
   max-width: 45em;
   z-index: -100; }
+  main > section.dynamic-css-borders.image-section img {
+    width: 100%; }
   main > section.dynamic-css-borders.image-section.top {
     margin-top: -2em; }
     main > section.dynamic-css-borders.image-section.top::after {
@@ -98,12 +230,6 @@ main > section.dynamic-css-borders.image-section {
       border-color: transparent transparent transparent #ffffff;
       top: 2em;
       z-index: 0; }
-
-.image {
-  background-image: url("/img/tollwerkstatt-1.jpg");
-  content: "";
-  height: 600px;
-  width: auto; }
 
 .COL_title {
   cursor: pointer; }

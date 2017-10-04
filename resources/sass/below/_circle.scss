@@ -1,0 +1,41 @@
+main > section.before-circle{
+    padding: 1.5em 1.5em 4em;
+}
+
+.circle {
+    text-align: center;
+
+    & .border-circle {
+        position: relative;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 50%;
+        width: 210px;
+        height: 210px;
+        margin: -100px 0 1em;
+    }
+
+    & .outer-circle {
+        position: absolute;
+        background-color: $color-grey-light;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        top: 5px;
+        left: 5px;
+    }
+
+        & .inner-circle {
+            position: absolute;
+            text-align: center;
+            height: 1em;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            color: $color-grey;
+            font-size: 18pt;
+            font-weight: 700;
+        }
+}

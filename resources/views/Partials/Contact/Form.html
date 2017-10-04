@@ -2,7 +2,9 @@
 <div class="contact-form">
     <f:if condition="{tw:user.isBanned()}">
         <f:then>
-            <f:render partial="GeneralErrors" arguments="{errors: '{0: \'Du wurdest wegen SPAM-Verdachts für das Formular gesperrt. Bitte kontaktiere uns direkt!\'}'}"/>
+            <!--<f:render partial="GeneralErrors" arguments="{errors: '{0: \'Du wurdest wegen SPAM-Verdachts für das Formular gesperrt. Bitte kontaktiere uns direkt!\'}'}"/>
+        -->
+            <f:render section="Form" arguments="{_all}"/>
         </f:then>
         <f:else>
             <f:render section="Form" arguments="{_all}"/>
@@ -11,14 +13,13 @@
 </div>
 
 
-
 <f:section name="Form">
+    <f:spaceless>
     <f:if condition="{form.success}">
         <f:then>
             <f:render section="ThankYou" arguments="{_all}"/>
         </f:then>
         <f:else>
-
             <f:render partial="GeneralErrors" arguments="{errors: form.errors.general}"/>
             <form method="post" action="/#contact">
 
@@ -40,11 +41,9 @@
                     <f:render section="FieldError" arguments="{error: form.errors.fields.message}"/>
                 </label>
 
-                <f:render section="SpamProtection"/>
+                 <f:render section="SpamProtection"/>
 
-                <div>
-                    <button type="submit">Absenden</button>
-                </div>
+                <button type="submit">Absenden</button>
 
             </form>
             <div class="required-text">
@@ -53,9 +52,8 @@
 
         </f:else>
     </f:if>
+    </f:spaceless>
 </f:section>
-
-
 
 <f:section name="ThankYou">
     <div class="contact-form-thankyou">
