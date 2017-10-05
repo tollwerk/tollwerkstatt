@@ -1,0 +1,14 @@
+main > section.dynamic-css-borders.location-section {
+    background-color: $section-color-alt;
+    &:before {
+        border-color: transparent transparent $section-color-alt transparent ;
+    }
+    &:after {
+        border-color: transparent  $section-color-alt  ;
+    }
+}
+
+.location iframe {
+    width: 100%;
+    background-color: $section-color-alt;
+}

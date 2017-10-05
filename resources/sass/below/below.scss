@@ -1,13 +1,15 @@
 @import "../common/variables";
-@import "general";
 @import "calendar";
-@import "motive";
-@import "form";
 @import "circle";
-@import "prices";
-@import "footer";
-@import "image-section";
 @import "COL_collapsible";
+@import "footer";
+@import "form";
+@import "gallery";
+@import "general";
+@import "image-section";
+@import "location";
+@import "motive";
+@import "prices";
 
 body:before {
   display: block;
